@@ -26,7 +26,7 @@ Import-Module OSD -Force
 
 Write-Host -ForegroundColor Green "Start OSDCloud"
 
-Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Pro -ZTI
+Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Enterprise -ZTI
 #Start-OSDCloud -OSBuild 21H1 -OSEdition Pro -OSLanguage nl-nl -OSLicense Volume -ZTI
 
 #Restart from WinPE
