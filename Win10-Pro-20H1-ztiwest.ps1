@@ -16,7 +16,7 @@ Import-Module OSD -Force
 
 #TODO: Spend the time to write a function to do this and put it here
 Write-Host  -ForegroundColor Cyan "Ejecting ISO"
-Write-Warning "That didn't work because I haven't coded it yet!"
+Write-Warning "One moment ..."
 #Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI the RIGHT way
