@@ -1,4 +1,4 @@
-Write-Host  -ForegroundColor Cyan "Starting Omroep West OSD's Custom OSDCloud ..."
+Write-Host  -ForegroundColor Cyan "Starting Bedrijfs OSD's Custom OSDCloud ..."
 Start-Sleep -Seconds 5
 
 #Change Display Resolution for Virtual Machine
@@ -20,7 +20,7 @@ Write-Warning "One moment ..."
 #Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI the RIGHT way
-Write-Host  -ForegroundColor Cyan "Start OSDCloud with Omroep West parameters"
+Write-Host  -ForegroundColor Cyan "Start OSDCloud with bedrijfs parameters"
 Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Enterprise -ZTI
 #Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 
