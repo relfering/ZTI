@@ -27,6 +27,10 @@ Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Enterprise -ZTI
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
 Write-Warning "One moment ..."
+Write-Warning "Waardes aanpassen naar gelang gewenst wordt ..."
+Resize-Partition -DriveLetter "C" -Size 200GB
+New-Partition -DiskNumber 0 -Size 37GB -DriveLetter D
+Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
 
 #Restart from WinPE
 Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
