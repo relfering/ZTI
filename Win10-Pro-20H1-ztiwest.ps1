@@ -21,7 +21,7 @@ Write-Warning "One moment ..."
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with bedrijfs parameters"
-Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Enterprise -ZTI
+Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
 #Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
