@@ -28,6 +28,9 @@ Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
 Write-Warning "One moment ..."
 Write-Warning "Waardes aanpassen naar gelang gewenst wordt ..."
+Resize-Partition -DriveLetter "C" -Size 100GB
+New-Partition -DiskNumber 0 -Size 90GB -DriveLetter E
+Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
 
 #Restart from WinPE
 Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
