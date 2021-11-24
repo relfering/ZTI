@@ -21,18 +21,19 @@ Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with bedrijfs parameters"
-Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
+Start-OSDCloudGUI
+#Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
 #Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
-Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
-Write-Warning "One moment ..."
-Write-Warning "Waardes aanpassen naar gelang gewenst wordt ..."
+#  Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
+#  Write-Warning "One moment ..."
+#  Write-Warning "Waardes aanpassen naar gelang gewenst wordt ..."
 #Resize-Partition -DriveLetter "C" -Size 100GB
 #New-Partition -DiskNumber 0 -Size 90GB -DriveLetter E
 #Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
 
 #Restart from WinPE
-Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
-Start-Sleep -Seconds 20
-wpeutil reboot
+#  Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
+#  Start-Sleep -Seconds 20
+#  wpeutil reboot
