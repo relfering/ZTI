@@ -20,7 +20,7 @@ Import-Module OSD -Force
 #Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI the RIGHT way
-Write-Host  -ForegroundColor Cyan "Start OSDCloud with bedrijfs parameters"
+Write-Host  -ForegroundColor Cyan "Start OSDCloud with West bedrijfs parameters"
 Start-OSDCloudGUI
 #Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
 #Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
