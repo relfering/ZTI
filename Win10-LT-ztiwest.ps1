@@ -1,4 +1,4 @@
-Write-Host  -ForegroundColor Cyan "Starting Bedrijfs OSD's Custom OSDCloud ..."
+Write-Host  -ForegroundColor Cyan "Starting Bedrijfs W10 LT OSD's Custom OSDCloud ..."
 Start-Sleep -Seconds 5
 
 #Change Display Resolution for Virtual Machine
@@ -15,23 +15,23 @@ Write-Host  -ForegroundColor Cyan "Importing the OSD PowerShell Module"
 Import-Module OSD -Force
 
 #TODO: Spend the time to write a function to do this and put it here
-#Write-Host  -ForegroundColor Cyan "Ejecting ISO"
-#Write-Warning "One moment ..."
-#Start-Sleep -Seconds 5
+#  Write-Host  -ForegroundColor Cyan "Ejecting ISO"
+#  Write-Warning "One moment ..."
+#  Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with West bedrijfs parameters ..... "
-#Start-OSDCloudGUI
+#  Start-OSDCloudGUI
 Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H2 -OSEdition PRO -ZTI
-#Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
+#  Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
 #  Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
 #  Write-Warning "One moment ..."
 #  Write-Warning "Waardes aanpassen naar gelang gewenst wordt ..."
-#Resize-Partition -DriveLetter "C" -Size 100GB
-#New-Partition -DiskNumber 0 -Size 90GB -DriveLetter E
-#Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
+#  Resize-Partition -DriveLetter "C" -Size 100GB
+#  New-Partition -DiskNumber 0 -Size 90GB -DriveLetter E
+#  Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
 
 #Restart from WinPE
 Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
