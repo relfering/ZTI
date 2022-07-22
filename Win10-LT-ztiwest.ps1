@@ -36,6 +36,8 @@ Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl -
 #  Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel Edit -Confirm:$false
 
 #Restart from WinPE
+Write-Host  -ForegroundColor Cyan "Verwijder de USB drive en press CTRL+C to reboot"
+Start-Sleep
 Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
 Start-Sleep -Seconds 20
 wpeutil reboot
