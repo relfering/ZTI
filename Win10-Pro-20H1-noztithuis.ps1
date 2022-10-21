@@ -1,5 +1,5 @@
 
-Write-Host  -ForegroundColor Cyan "Starting Bedrijfs W10 DT OSD's Custom OSDCloud ..."
+Write-Host  -ForegroundColor Cyan "Starting thuis W10 DT OSD's Custom OSDCloud ..."
 Start-Sleep -Seconds 5
 
 #Change Display Resolution for Virtual Machine
@@ -20,10 +20,11 @@ Import-Module OSD -Force
 #  Write-Warning "One moment ..."
 #  Start-Sleep -Seconds 5
 
-#Start OSDCloud ZTI the RIGHT way
+#Start OSDCloud zonder ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with West bedrijfs parameters ..... "
 #  Start-OSDCloudGUI
-Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
+# Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
+Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl
 
 # Start-OSDCloud -OSLanguage nl-nl -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition PRO -ZTI
 #  Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
