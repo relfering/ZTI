@@ -21,12 +21,12 @@ Import-Module OSD -Force
 #  Start-Sleep -Seconds 5
 
 #Start OSDCloud zonder ZTI the RIGHT way
-Write-Host  -ForegroundColor Cyan "Start OSDCloud with West bedrijfs parameters ..... "
+Write-Host  -ForegroundColor Cyan "Start OSDCloud with thuis parameters ..... "
 #  Start-OSDCloudGUI
-# Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
+#  Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
 Start-OSDCloud  -OSName 'Windows 10 21H2 x64' -OSEdition PRO -OSLanguage nl-nl
 
-# Start-OSDCloud -OSLanguage nl-nl -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition PRO -ZTI
+#  Start-OSDCloud -OSLanguage nl-nl -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition PRO -ZTI
 #  Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
