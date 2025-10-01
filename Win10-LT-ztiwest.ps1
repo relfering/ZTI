@@ -23,7 +23,7 @@ Import-Module OSD -Force
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with West bedrijfs parameters ..... "
 #  Start-OSDCloudGUI
 # Start-OSDCloud  -OSName 'Windows 10 22H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
-Start-OSDCloud  -OSName 'Windows 11 24H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
+Start-OSDCloud  -OSName 'Windows 11 22H2 x64' -OSEdition PRO -OSLanguage nl-nl -ZTI
 
 #  Start-OSDCloud -OSLanguage nl-nl -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition PRO -ZTI
 #  Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
