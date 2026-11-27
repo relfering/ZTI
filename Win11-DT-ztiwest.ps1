@@ -33,7 +33,7 @@ try {
 
     # Start Windows 11 ZTI deployment
     Write-Host ""
-    Write-Host -ForegroundColor Cyan "Starting Omroep West Windows 11 Laptop deployment..."
+    Write-Host -ForegroundColor Cyan "Starting Omroep West Windows 11 Desktop deployment..."
     Write-Host -ForegroundColor Cyan "OS        : Windows 11 25H2 x64"
     Write-Host -ForegroundColor Cyan "Edition   : Pro"
     Write-Host -ForegroundColor Cyan "Language  : nl-NL"
